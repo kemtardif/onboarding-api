@@ -1,6 +1,4 @@
-Home
-->creditCheckHistory
-->creditCheck(companyName)
-->creditCheckItem
-->creditCheckHistory
-->Home
+Home->creditCheckHistory(identifier, companyName, dateRequested, ratingValue)
+creditCheckHistory->CreditCheckForm(companyName)->CreditCheckItem
+creditCheckItem->CreditCheckHistory(identifier, companyName, dateRequested, ratingValue)
+creditCheckHistory->Home

@@ -1,0 +1,17 @@
+Home
+->Customer
+->CreateCompany(companyName, address,  email,telephone, status)
+->CreatedCustomer
+->Home
+
+Home
+->Account
+->CreateAccount(companyId, division, discount, creditLimit)
+->CreatedAccount
+->Home
+
+Home
+->Activity
+->CreateActivity(companyId, accountId, activityType, dateScheduled)
+->CreatedActivity
+->Home
