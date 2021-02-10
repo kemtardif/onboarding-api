@@ -16,6 +16,10 @@
     "bigco"
   ],
   "author": "Kem Tardif <tardif.kremlin@gmail.com>",
+  "assets: {
+   "diagram": "onboarding-api-diagram.png",
+   "alps": "onboarding-alps.yaml"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kemtardif/onboarding-api/issues"

@@ -1,0 +1,46 @@
+alps:
+	version: "1.01
+	title: "Credit Check Service"
+ 	doc:
+		type:"markdown"
+		value:"This is the ALPS docs for future implementation of credit check"
+	descriptor:
+		#vocabulary properties
+		-id:"identifier"
+		type:"semantic"
+		-id:"companyName"
+		type:"semantic"
+		-id:"ratingValue"
+		type:"semantic"
+		-id:"dateRequested"
+		type:"semantic"
+
+		#reference grouping
+		-id:"ratingItem"
+		type:"group"
+		descriptor:
+			-href:"#identifier"
+			-href:"#companyName"
+			-href:"#ratingValue"
+			-href:"#dateRequested"
+
+		#actions
+		-id:"home"
+		type:"safe"
+		
+		-id:"creditCheckHistory"
+		type:"safe"
+		rt:"ratingItem"
+		descriptor:
+			href:"#companyName"
+			
+		-id:"creditCheckForm"
+		type:"safe"
+		rt:"ratingItem"
+		
+		-id:"creditCheckItem"
+		type:"safe"
+		rt:"ratingItem"
+		descriptor:
+			-href:"#identifier"
+		
